@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Race-Cars</title>
+    <style>
+      body {
+        background: rgb(247, 233, 186);
+        background: linear-gradient(
+          90deg,
+          rgba(247, 233, 186, 1) 0%,
+          rgba(76, 62, 231, 1) 76%,
+          rgba(0, 6, 5, 0.6363795518207283) 100%
+        );
+        font-family: serif, "Times New Roman", Times;
+      }
+
+      h1 {
+        color: darkblue;
+        background: grey;
+        border: solid 2px;
+        text-align: center;
+      }
+
+      h2 {
+        color: darkcyan;
+        background: lightgrey;
+      }
+      li {
+        color: blueviolet;
+        background: lightseagreen;
+      }
+      p {
+        border: solid 2px blue;
+      }
+      .grid-container {
+        display: grid;
+        grid-template: 300px 300px/ 300px 300px;
+        gap: 20px 20px;
+        justify-items: center;
+      }
+      .types {
+        border: solid 2px;
+        display: flex;
+      }
+      .joke {
+        border: solid 2px;
+      }
+      .question {
+        border: solid 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="title">
+        <h1>Race-Cars</h1>
+      </div>
+      <div class="types">
+        <h2>Types of Race Cars</h2>
+
+        <ul>
+          <li><a href="https://www.formula1.com/"> Formula 1</a></li>
+          <li><a href="http://https://www.btcc.net/">Touring Cars</a></li>
+          <li><a href="https://www.britishgt.com">British GT</a></li>
+          <li><a href="https://www.javelintrackdays.co.uk/">Track day</a></li>
+        </ul>
+      </div>
+      <div class="joke">
+        <p>
+          What do we want?<br />
+          Race Cars!<br />
+          When do we want them?<br />
+          Neeeoooowwwwwww
+        </p>
+      </div>
+      <div class="question">
+        <h3>My Questions for the user</h3>
+
+        <ul>
+          <li>What is their name?</li>
+          <li>What is their favorite motorsport?</li>
+          <li>Which is their favorite track?</li>
+          <li>What are there favorite conditions?</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      let user = prompt("What is your name?");
+      console.log("Todays visitor is " + user);
+
+      let motorsport = prompt("What is your favourite type of motorsport?");
+      console.log("Your favourite type of motorsport is " + motorsport);
+
+      alert(
+        "Hi there, " + user + ". Your favourite motorsport is " + motorsport
+      );
+      let track = prompt(user + " which is your favorite race track?");
+      console.log(user + " which is your favorite race track?");
+
+      let conditions = prompt(user + " what are the best racing conditions");
+      console.log(user + " what are the best racing conditions");
+
+      alert(
+        "Hey " +
+          user +
+          " your favorite motorsport is " +
+          motorsport +
+          " at " +
+          track +
+          " in " +
+          conditions +
+          " condtions"
+      );
+    </script>
+    <video width="220" height="400" controls src="./hotwheels.mp4"></video>
+    <footer>/>Andy Hutton 2023</footer>
+  </body>
+</html>
